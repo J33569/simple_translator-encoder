@@ -11,17 +11,20 @@
 <body>
   <script src="script.js"></script>
   <h1>A simple encoder</h1>
+  <p class="key">Key</p>
   <div class="buttons">
     <button>Encode</button>
-    <div>
-      <select name="key" id="key">
-      </select>
-    </div>
+    <select name="key" id="key">
+      <option value="000">000</option>
+      <option value="001">001</option>
+      <option value="002">002</option>
+      <option value="003">003</option>
+    </select>
     <button>Decode</button>
   </div>
   <div>
-    <textarea type="text" placeholder="Put text to encode here"></textarea>
-    <textarea type="text" placeholder="Put text to decode here"></textarea>
+    <textarea type="text" placeholder="Put text to encode here" id="encoder"></textarea>
+    <textarea type="text" placeholder="Put text to decode here" id="decoder"></textarea>
   </div>
 </body>
 
