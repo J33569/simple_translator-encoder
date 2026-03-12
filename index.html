@@ -14,12 +14,7 @@
   <p class="key">Key</p>
   <div class="buttons">
     <button>Encode</button>
-    <select name="key" id="key">
-      <option value="000">000</option>
-      <option value="001">001</option>
-      <option value="002">002</option>
-      <option value="003">003</option>
-    </select>
+    <input type="text" id="key" pattern="[0-9]{3}" maxlength="3" placeholder="Key">
     <button>Decode</button>
   </div>
   <div>
