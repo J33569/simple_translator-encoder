@@ -107,6 +107,12 @@ p.key {
     margin: 0px;
 }
 
+p.key-info {
+    color: #ededed;
+    text-align: center;
+    margin: 0px;
+}
+
 p.warning {
     color: #f00;
     text-align: center;
