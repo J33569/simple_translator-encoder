@@ -14,7 +14,7 @@
   <div class="buttons">
     <button onclick="copyDecoded()">Copy text</button>
     <button class="temporary" onclick="encode()">Encode</button>
-    <input type="text" id="key" pattern="[0-9]{1}" maxlength="1" placeholder="Key">
+    <input type="text" id="key" pattern="[0-9]{1}" maxlength="1" placeholder="Key" autocomplete="off">
     <button class="temporary" onclick="decode()">Decode</button>
     <button onclick="copyEncoded()">Copy code</button>
   </div>
@@ -22,9 +22,10 @@
     <textarea type="text" placeholder="Put text to encode here" id="ta1"></textarea>
     <textarea type="text" placeholder="Put text to decode here" id="ta2"></textarea>
   </div>
-  <p class="warning">WARNING, PUTTING COMMA SPACE(, ) DOES NOT WORK, AND IS CURRENTLY BEING FIXED</p>
+  <p class="warning">WARNING, PUTTING THE FOLLOWING CHARACTERS(éèçà) DOES NOT WORK, AND WILL BREAK CHARACTERS AROUND IT, AND IS CURRENTLY BEING FIXED</p>
   <p class="key-info">How key works:<br>Key 1: 0 is swapped to 1 and vice verca, Key 2: caesar cipher, Key 3: keys 1 and
-    2 combined, Key 4: inverted alphabet,<br>Key 5: inverted code(eg. if it used to be 123 for a letter now its 321), Keys 6-9: not yet finished, Key 0 or letters: default encryption</p>
+    2 combined, Key 4: inverted alphabet,<br>Key 5: inverted code(eg. if it used to be 123 for a letter now its 321),
+    Keys 6-9: not yet finished, Key 0 or letters: default encryption<br><br>Supported characters: ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789.,";/:()^*&?%$@!#|<>=+1_[]{}±£¢¤¬¦²³¼½¾~¯'\</p>
   <script src="script.js"></script>
 </body>
 
