@@ -15,14 +15,14 @@
 		encoder
 	</h1>
 	<textarea type="text" placeholder="Put text to encode here" id="ta1"></textarea>
-	<button onclick="copyDecoded()">Copy text</button>
+	<button onclick="copyDecoded()" class="copy">Copy text</button>
 	<p class="key">Key</p>
 	<div class="buttons">
 		<button class="temporary" onclick="encode()">Encode</button>
 		<input type="text" id="key" pattern="[0-9]{1}" maxlength="1" placeholder="Key" autocomplete="off">
 		<button class="temporary" onclick="decode()">Decode</button>
 	</div>
-	<button onclick="copyEncoded()">Copy code</button>
+	<button onclick="copyEncoded()" class="copy b_copy">Copy code</button>
 	<br>
 	<textarea type="text" placeholder="Put text to decode here" id="ta2"></textarea>
 	<p class="warning">WARNING, PUTTING THE FOLLOWING CHARACTERS(éèçà) DOES NOT WORK, AND WILL BREAK CHARACTERS AROUND
@@ -39,7 +39,7 @@
 		Keys 6-9: not yet finished, Key 0 or letters: default encryption<br><br>Supported characters:
 		ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789.,";/:()^*&amp;?%$@!#|&lt;&gt;=+1_[]{}±£¢¤¬¦²³¼½¾~¯'\
 		<br>
-		<a href="/">Computer/laptop version here</a>
+		<a href="https://j33569.github.io/simple_translator-encoder/">Computer/laptop version here</a>
 	</p>
 	<script src="script.js"></script>
 	<script>

@@ -12,7 +12,7 @@ body {
 
 @font-face {
     font-family: patricstar;
-    src: url(PatrickHand-Regular.ttf);
+    src: url(https://j33569.github.io/simple_translator-encoder/PatrickHand-Regular.ttf);
 }
 
 h1 {
@@ -124,4 +124,8 @@ p.warning {
     text-align: center;
     margin: 0px;
     font-size: 35px;
+}
+
+p a {
+    color: rgb(0, 0, 238);
 }
